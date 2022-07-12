@@ -1,35 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>chicken</title>
+    <title>Our chicken</title>
     <style>
-     
-     body,
+        body,
         section {
             font-family: 'Roboto Slab', serif;
             height: 100vh;
             width: 100vw;
             overflow: hidden;
+            top: 0;
         }
+
+        .left_div {
+            height: 100%;
+            width: 40%;
+            background-color: rgb(48, 124, 109);
+            float: right;
+            color: aliceblue;
+        }
+
+        .right_image {
+            width: 100%;
+            height: 100%;
+            z-index: 70;
+        }
+
+        .image_picture {
+            width:60%;
+            height: 100%;
+            float: left;
+        }
+
+        .top_title_text {
+            margin: left 20px;
+            ;
+        }
+
+        .main_heading {
+            margin-top: 100px;
+            font-size: 55px;
+            text-align: center;
+        }
+
+        .descreptive_heading {
+            text-align: center;
+        }
+
+        .descriptive_text {
+            float: right;
+            height: 100%;
+            width: 70%;
+        }
+        .bottom_button{
+         position: fixed; 
+         bottom:0 ;
+         margin: 16px;
+         background-color: rgb(48,124,109); 
+         float: left; 
+         color: aliceblue;
+         font-size: 20px;
+         text-decoration: none;
+        }
+        .middle_menu{
+            margin-left: 200px;  text-decoration: none;
+            font-size: 16px;
+            font-weight: bold; 
+            color: aliceblue;
+            float: left; 
+            list-style-type: none; 
+            border: 0px;
+            text-align: center;
+            position:relative;
+            float: left;
+            text-decoration: none;
+            
+        }
+        .middle_menu>li>a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+       
+
     </style>
 </head>
+
 <body>
-<!--this is the main section-->
-<section class="main_section">
-    <!--the first inner div-->
-    <div>
-  <h1 class="main_heading">Fatty natural fed chicken</h1>
-  <p class="lower_text">Get yourself the best chicken for rearing or eating at an affordable price!
-    <button class="bottom_button">Buy chicken now at 35000 each</button>
-   
-  </p>    
-    </div> 
-    <div>
-      <img style="width: 100%;" src="images/thomas-iversen-4W8FgDVyUME-unsplash.jpg" alt="chickens on a farm" class="left_image">   
-    </div>
-</section>    
+    <!--This is the main section-->
+    <section class is="main_section">
+        <!--The first inner div-->
+        <div class="left_div">
+            <p class="top_title_text">Farm animals</p>
+            <h1 class="main_heading">Chicken</h1>
+            <h3 class="descreptive_heading">Take a look at some of our animals ...</h3>
+            <!-- <h5 class="descriptive_text">choose from a variety of different animals</h5> -->
+            <ul class="middle_menu" style="text-decoration-color:rgb(48,124,109) ;">
+                <li><a href="goats.html" class="enjoy_goats">goats</a></li>
+                <li><a href="rabbits.html" class="enjoy_rabbits">rabbits</a></li>
+                <!-- <li><a href="manure.html" class="fresh_manure">cows</a></li> -->
+                <li><a href="sheep.html" class="enjoy_sheep">sheep</a></li>
+                <a href="index.html" class="bottom_button">Return Home ..</a>
+            </ul>
+
+        </div>
+        <!--second inner div-->
+        <div class="image_picture">
+            <img src="images/beautiful-shot-chickens-grass-farm-sunny-day.jpg" alt="collage of different animals" class="right_image">
+
+        </div>
+    </section>
+
 </body>
+
 </html>
